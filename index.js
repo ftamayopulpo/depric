@@ -80,9 +80,14 @@ const init = async () => {
       data: body,
     })
       .then((response) => {
-        socket.emit("new_response", response.data);
+        socket.emit("response_ok", response.status, response.data);
       })
       .catch((error) => {
+        socket.emit(
+          "response_error",
+          error.response.status,
+          error.response.data
+        );
         console.log("Axios ERROR:", error);
       });
   };
