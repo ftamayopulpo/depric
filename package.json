@@ -1,0 +1,12 @@
+{
+  "name": "depric",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ftamayopulpo/depric.git",
+  "author": "Francisco Tamayo <francisco.tamayo@getpulpo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "0.27.2",
+    "socket.io-client": "4.5.1"
+  }
+}
